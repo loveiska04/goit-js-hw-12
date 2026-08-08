@@ -1,7 +1,17 @@
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
@@ -25,8 +35,41 @@ body {
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
   flex-grow: 1;
 }
-main:has(.back-link) {
-  text-align: center;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.load-more-btn {
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 16px;
+
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  margin-bottom: 20px;
+}
+
+.load-more-btn:hover {
+  background-color: #6c8cff;
+}
+
+.load-more-btn.is-hidden {
+  display: none;
 }

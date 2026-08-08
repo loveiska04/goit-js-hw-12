@@ -1,0 +1,42 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 360px;
+    border: 1px solid #808080;
+}
+
+.gallery-image {
+    display: block;
+    width: 100%;
+    height: 152px;
+    object-fit: cover;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-label {
+    font-weight: 600;
+}
+
+.stats-value {
+    color: #555;
+}
